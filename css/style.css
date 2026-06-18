@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:#0c2340;
+    color:white;
+    padding:20px;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.banner{
+    min-height: 100vh;
+    background-image: url('../imagens/banner-solar.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #0C2340;
+}
+
+.overlay{
+    background:rgba(0,0,0,.5);
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner-content{
+    text-align:center;
+    color:white;
+}
+
+.banner-content h2{
+    font-size:3rem;
+}
+
+.banner-content p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.btn{
+    background:#f4b400;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.vantagens{
+    padding:80px 0;
+    background:#f7f7f7;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    margin-top:40px;
+}
+
+.card{
+    flex:1;
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.card i{
+    font-size:50px;
+    color:#f4b400;
+}
+
+.kits{
+    padding:80px 0;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.produto{
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.produto img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.produto h3{
+    margin:15px;
+}
+
+.produto span{
+    display:block;
+    font-size:22px;
+    color:#0c2340;
+    font-weight:bold;
+}
+
+.produto button{
+    margin:20px;
+    padding:12px 30px;
+    background:#f4b400;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#0c2340;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    text-decoration:none;
+    z-index:999;
+}
