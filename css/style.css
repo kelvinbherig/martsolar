@@ -151,6 +151,206 @@ footer{
     padding:40px;
 }
 
+.vantagens-hero{
+    padding:96px 0;
+    background:linear-gradient(120deg,#0c2340,#164a68);
+    color:white;
+}
+
+.vantagens-hero-content{
+    max-width:850px;
+    text-align:center;
+}
+
+.vantagens-eyebrow{
+    color:#d79d12;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.vantagens-hero .vantagens-eyebrow{
+    color:#ffd15b;
+}
+
+.vantagens-hero h2{
+    margin:16px 0;
+    font-size:clamp(36px,6vw,60px);
+    line-height:1.1;
+}
+
+.vantagens-hero-content > p:not(.vantagens-hero-note){
+    max-width:700px;
+    margin:0 auto 28px;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.vantagens-cta{
+    display:inline-flex;
+    min-height:50px;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px 22px;
+    border-radius:6px;
+    background:#f4b400;
+    color:#0c2340;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:none;
+}
+
+.vantagens-cta:hover{
+    background:#ffd15b;
+}
+
+.vantagens-cta:focus-visible{
+    outline:3px solid #fff;
+    outline-offset:3px;
+}
+
+.vantagens-hero-note{
+    margin-top:18px;
+    color:#e1e9f1;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.vantagens-beneficios,
+.vantagens-estudos{
+    padding:76px 0;
+}
+
+.vantagens-estudos{
+    background:#f7f7f7;
+}
+
+.vantagens-section-heading{
+    max-width:780px;
+    margin:0 auto 36px;
+    text-align:center;
+}
+
+.vantagens-section-heading h2,
+.proposta-layout h2{
+    margin:10px 0;
+    color:#0c2340;
+    font-size:clamp(28px,4vw,38px);
+    line-height:1.2;
+}
+
+.vantagens-section-heading > p{
+    color:#596575;
+    line-height:1.6;
+}
+
+.vantagens-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:22px;
+}
+
+.vantagem-item{
+    padding:26px;
+    border:1px solid #e3e7eb;
+    border-radius:10px;
+    background:white;
+}
+
+.vantagem-icon{
+    display:flex;
+    width:48px;
+    height:48px;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:16px;
+    border-radius:50%;
+    background:#fff4d2;
+    color:#0c2340;
+    font-size:21px;
+}
+
+.vantagem-item h3,
+.estudo-card h3{
+    margin-bottom:10px;
+    color:#0c2340;
+    font-size:20px;
+}
+
+.vantagem-item p,
+.estudo-card p,
+.proposta-layout p{
+    color:#596575;
+    line-height:1.65;
+}
+
+.estudos-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:22px;
+}
+
+.estudo-card{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    padding:26px;
+    border:1px solid #e3e7eb;
+    border-radius:10px;
+    background:white;
+}
+
+.estudo-label{
+    margin-bottom:14px;
+    color:#8a6100;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+}
+
+.estudo-card p{
+    flex:1;
+    margin-bottom:18px;
+}
+
+.estudo-card a{
+    color:#0c5d83;
+    font-weight:bold;
+    line-height:1.5;
+    text-decoration-thickness:1px;
+    text-underline-offset:3px;
+}
+
+.estudos-nota{
+    margin-top:20px;
+    color:#596575;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.vantagens-proposta{
+    padding:64px 0;
+    background:#fff4d2;
+}
+
+.proposta-layout{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:32px;
+}
+
+.proposta-layout > div{
+    max-width:760px;
+}
+
+.proposta-layout .vantagens-cta{
+    flex-shrink:0;
+}
+
 .orcamento{
     padding:72px 0 80px;
     background:#f7f7f7;
@@ -328,14 +528,25 @@ footer{
 
     .vantagens,
     .kits,
-    .orcamento{
+    .orcamento,
+    .vantagens-beneficios,
+    .vantagens-estudos{
         padding:56px 0;
+    }
+
+    .vantagens-hero{
+        padding:72px 0;
     }
 
     .cards{
         flex-direction:column;
         gap:16px;
         margin-top:28px;
+    }
+
+    .vantagens-grid,
+    .estudos-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
     .grid{
@@ -375,8 +586,43 @@ footer{
 
     .vantagens,
     .kits,
-    .orcamento{
+    .orcamento,
+    .vantagens-beneficios,
+    .vantagens-estudos{
         padding:44px 0;
+    }
+
+    .vantagens-hero{
+        padding:56px 0;
+    }
+
+    .vantagens-hero h2{
+        font-size:36px;
+    }
+
+    .vantagens-hero-content > p:not(.vantagens-hero-note){
+        font-size:16px;
+    }
+
+    .vantagens-cta{
+        width:100%;
+    }
+
+    .vantagens-grid,
+    .estudos-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:16px;
+    }
+
+    .vantagem-item,
+    .estudo-card{
+        padding:22px;
+    }
+
+    .proposta-layout{
+        align-items:stretch;
+        flex-direction:column;
+        gap:20px;
     }
 
     .vantagens h2,
