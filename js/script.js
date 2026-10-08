@@ -1,25 +1,9 @@
-function comprar(produto, valor){
+function comprar(){
+    const linkWhatsApp = document.querySelector('.whatsapp');
 
-    fetch('api/criar-pagamento.php', {
-        method: 'POST',
-        headers:{
-            'Content-Type':'application/json'
-        },
-        body: JSON.stringify({
-            produto: produto,
-            valor: valor
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
+    if (!linkWhatsApp) {
+        throw new Error('Link do WhatsApp não encontrado.');
+    }
 
-        if(data.link){
-            window.location.href = data.link;
-        }
-
-    })
-    .catch(error => {
-        console.log(error);
-    });
-
+    window.open(linkWhatsApp.href, '_blank', 'noopener,noreferrer');
 }
