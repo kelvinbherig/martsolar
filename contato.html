@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicite um orçamento de energia solar com a MartSolar.">
+    <title>Solicite seu orçamento | MartSolar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>MartSolar</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Início</a></li>
+                <li><a href="index.html#kits">Kits Solares</a></li>
+                <li><a href="index.html#vantagens">Vantagens</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="orcamento">
+    <div class="container">
+        <div class="orcamento-intro">
+            <span class="orcamento-eyebrow">Vamos começar?</span>
+            <h2>Solicite seu orçamento</h2>
+            <p>Conte um pouco sobre você e sua necessidade. Nossa equipe continua o atendimento pelo WhatsApp.</p>
+        </div>
+
+        <form id="form-orcamento" class="orcamento-form">
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" name="nome" type="text" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="telefone">WhatsApp</label>
+                    <input id="telefone" name="telefone" type="tel" autocomplete="tel"
+                        placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">E-mail <span>(opcional)</span></label>
+                    <input id="email" name="email" type="email" autocomplete="email">
+                </div>
+
+                <div class="form-field">
+                    <label for="cidade">Cidade/UF</label>
+                    <input id="cidade" name="cidade" type="text" autocomplete="address-level2" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="conta">Valor médio da conta de energia</label>
+                    <select id="conta" name="conta" required>
+                        <option value="" selected disabled>Selecione uma faixa</option>
+                        <option value="Até R$ 300">Até R$ 300</option>
+                        <option value="De R$ 301 a R$ 600">De R$ 301 a R$ 600</option>
+                        <option value="De R$ 601 a R$ 1.000">De R$ 601 a R$ 1.000</option>
+                        <option value="Acima de R$ 1.000">Acima de R$ 1.000</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="imovel">Tipo de imóvel</label>
+                    <select id="imovel" name="imovel" required>
+                        <option value="" selected disabled>Selecione o tipo</option>
+                        <option value="Residencial">Residencial</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Rural">Rural</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-field form-field-full">
+                    <label for="detalhes">Como podemos ajudar? <span>(opcional)</span></label>
+                    <textarea id="detalhes" name="detalhes" rows="4"
+                        placeholder="Conte mais sobre o projeto ou tire uma dúvida."></textarea>
+                </div>
+            </div>
+
+            <p class="form-notice">
+                Ao continuar, seus dados serão enviados à MartSolar pelo WhatsApp para atender sua solicitação.
+            </p>
+
+            <button class="orcamento-submit" type="submit">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                Enviar solicitação pelo WhatsApp
+            </button>
+        </form>
+    </div>
+</main>
+
+<footer id="contato">
+    <div class="container">
+        <h3>MartSolar</h3>
+        <p>Soluções completas em Energia Solar Fotovoltaica.</p>
+        <p>contatomartsolar@gmail.com</p>
+        <p><strong>Endereço:</strong> R Mercúrio 4618 Satélite CEP 64059-120 Teresina - PI</p>
+        <p><strong>CNPJ:</strong> 29.329.974/0001-03</p>
+    </div>
+</footer>
+
+<a
+    href="https://wa.me/558632118817?text=Ol%C3%A1%20MartSolar"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp"
+    aria-label="Fale com a MartSolar pelo WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
