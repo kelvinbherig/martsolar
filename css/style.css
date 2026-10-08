@@ -167,3 +167,115 @@ footer{
     text-decoration:none;
     z-index:999;
 }
+
+@media (max-width: 768px){
+    header{
+        padding:18px 0;
+    }
+
+    header .container{
+        flex-direction:column;
+        gap:16px;
+    }
+
+    nav{
+        width:100%;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:8px 18px;
+    }
+
+    nav a{
+        display:block;
+        padding:8px 0;
+    }
+
+    .banner{
+        min-height:65vh;
+        min-height:65svh;
+    }
+
+    .overlay{
+        min-height:inherit;
+    }
+
+    .vantagens,
+    .kits{
+        padding:56px 0;
+    }
+
+    .cards{
+        flex-direction:column;
+        gap:16px;
+        margin-top:28px;
+    }
+
+    .grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:20px;
+    }
+
+    footer{
+        padding:32px 16px;
+    }
+
+    .whatsapp{
+        width:54px;
+        height:54px;
+        right:16px;
+        bottom:16px;
+        font-size:30px;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width:92%;
+    }
+
+    header h1{
+        font-size:26px;
+    }
+
+    nav ul{
+        gap:4px 14px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .vantagens,
+    .kits{
+        padding:44px 0;
+    }
+
+    .vantagens h2,
+    .kits h2{
+        font-size:25px;
+        line-height:1.25;
+        text-align:center;
+    }
+
+    .card{
+        padding:24px 18px;
+    }
+
+    .produto button{
+        min-height:44px;
+        margin:16px;
+    }
+
+    footer .container{
+        width:100%;
+    }
+
+    footer p{
+        margin-top:12px;
+        line-height:1.5;
+        overflow-wrap:anywhere;
+    }
+}
