@@ -27,6 +27,32 @@ header .container{
     align-items:center;
 }
 
+.site-title{
+    line-height:0;
+}
+
+.site-title a{
+    display:inline-block;
+}
+
+.site-title img{
+    display:block;
+    width:88px;
+    height:66px;
+    object-fit:contain;
+}
+
+.footer-brand{
+    margin-bottom:16px;
+    line-height:0;
+}
+
+.footer-brand img{
+    width:80px;
+    height:60px;
+    object-fit:contain;
+}
+
 nav ul{
     display:flex;
     list-style:none;
@@ -630,8 +656,9 @@ footer{
         width:92%;
     }
 
-    header h1{
-        font-size:26px;
+    .site-title img{
+        width:76px;
+        height:57px;
     }
 
     nav ul{
