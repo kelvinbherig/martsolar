@@ -105,6 +105,58 @@ nav a{
     padding:80px 0;
 }
 
+.kits-page-intro{
+    padding:64px 0 0;
+    background:#f7f7f7;
+    text-align:center;
+}
+
+.kits-page-intro h2{
+    margin:10px 0;
+    color:#0c2340;
+    font-size:clamp(30px,4vw,42px);
+}
+
+.kits-page-intro p{
+    max-width:700px;
+    margin:0 auto;
+    color:#596575;
+    line-height:1.6;
+}
+
+.kits-page-list{
+    padding-top:36px;
+    background:#f7f7f7;
+}
+
+.kits-page-list .grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.kits-page-list .produto{
+    display:flex;
+    flex-direction:column;
+    background:white;
+}
+
+.kits-page-list .produto img{
+    aspect-ratio:16 / 9;
+    object-fit:cover;
+}
+
+.kits-page-list .produto p{
+    flex:1;
+    margin:0 20px 12px;
+    line-height:1.55;
+}
+
+.kits-page-list .produto button{
+    align-self:center;
+    min-height:46px;
+    font:inherit;
+    font-weight:bold;
+}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -528,6 +580,8 @@ footer{
 
     .vantagens,
     .kits,
+    .kits-page-intro,
+    .kits-page-list,
     .orcamento,
     .vantagens-beneficios,
     .vantagens-estudos{
@@ -552,6 +606,10 @@ footer{
     .grid{
         grid-template-columns:minmax(0,1fr);
         gap:20px;
+    }
+
+    .kits-page-list .grid{
+        grid-template-columns:minmax(0,1fr);
     }
 
     footer{
@@ -586,6 +644,8 @@ footer{
 
     .vantagens,
     .kits,
+    .kits-page-intro,
+    .kits-page-list,
     .orcamento,
     .vantagens-beneficios,
     .vantagens-estudos{

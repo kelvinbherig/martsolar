@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sistema solar trifásico comercial</title>
+  <desc id="desc">Edificação comercial com várias fileiras de módulos solares e conexão elétrica trifásica ilustrada.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#dcefff"/>
+      <stop offset="1" stop-color="#f5f9ff"/>
+    </linearGradient>
+    <linearGradient id="panel" x2="1" y2="1">
+      <stop stop-color="#227eae"/>
+      <stop offset="1" stop-color="#0c2340"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#sky)"/>
+  <circle cx="533" cy="72" r="34" fill="#f4b400"/>
+  <path d="M0 284h640v76H0z" fill="#d7ead9"/>
+  <path d="M85 168 320 91l235 77v153H85z" fill="#fdfefe"/>
+  <path d="m72 171 248-89 248 82-13 27-235-76-236 84z" fill="#0c2340"/>
+  <g fill="url(#panel)" stroke="#b7e5f6" stroke-width="3">
+    <path d="m151 151 66-23 65 21-3 37-128 0z"/>
+    <path d="m292 151 66-23 65 21-3 37-128 0z"/>
+    <path d="m433 151 66-23 43 14v30l-83 0z"/>
+  </g>
+  <g fill="none" stroke="#b7e5f6" stroke-width="2">
+    <path d="M184 139v47m32-58v58m32-47v47m-93-22h127"/>
+    <path d="M325 139v47m32-58v58m32-47v47m-93-22h127"/>
+    <path d="M466 139v47m32-58v58m-67-22h84"/>
+  </g>
+  <rect x="116" y="222" width="63" height="62" rx="4" fill="#c2e8f4"/>
+  <path d="M147 222v62m-31-31h63" stroke="#fff" stroke-width="4"/>
+  <rect x="216" y="218" width="63" height="92" rx="3" fill="#dceaf0"/>
+  <path d="M247 218v92" stroke="#a5bdc7" stroke-width="3"/>
+  <rect x="365" y="214" width="138" height="89" rx="6" fill="#0c2340"/>
+  <path d="M384 239h30l15 23 15-23h31m-61 2v35m30-35v35" fill="none" stroke="#f4b400" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="434" y="292" fill="#fff" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">3 fases</text>
+  <path d="M48 321h544" stroke="#a5cfa9" stroke-width="5" stroke-linecap="round"/>
+</svg>
