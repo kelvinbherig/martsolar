@@ -1,11 +1,17 @@
-function comprar(){
+function comprar(produto){
     const linkWhatsApp = document.querySelector('.whatsapp');
 
     if (!linkWhatsApp) {
         throw new Error('Link do WhatsApp não encontrado.');
     }
 
-    window.open(linkWhatsApp.href, '_blank', 'noopener,noreferrer');
+    const mensagem = produto
+        ? `Olá, gostaria de receber um orçamento para o ${produto}.`
+        : 'Olá, gostaria de saber mais sobre os kits solares.';
+    const urlWhatsApp = new URL(linkWhatsApp.href);
+    urlWhatsApp.searchParams.set('text', mensagem);
+
+    window.open(urlWhatsApp.toString(), '_blank', 'noopener,noreferrer');
 }
 
 const formOrcamento = document.querySelector('#form-orcamento');
