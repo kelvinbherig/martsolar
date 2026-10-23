@@ -27,20 +27,28 @@ header .container{
     align-items:center;
 }
 
-.site-title{
+header .site-title{
     line-height:0;
+    margin-right:20px;
 }
 
-.site-title a{
-    display:inline-block;
+header .site-title a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
 }
 
-.site-title img{
+header .site-title img{
     display:block;
-    width:64px;
+    width:92px;
     max-width:100%;
-    height:48px;
+    height:68px;
     object-fit:contain;
+    transition:transform .2s ease;
+}
+
+header .site-title a:hover img{
+    transform:scale(1.05);
 }
 
 .footer-brand{
@@ -49,9 +57,9 @@ header .container{
 }
 
 .footer-brand img{
-    width:64px;
+    width:78px;
     max-width:100%;
-    height:48px;
+    height:58px;
     object-fit:contain;
 }
 
